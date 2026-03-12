@@ -22,21 +22,21 @@ export default function App() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case "home": return <Home navigate={navigate} />;
-      case "what-we-do": return <WhatWeDo navigate={navigate} />;
-      case "who-we-help": return <WhoWeHelp navigate={navigate} />;
-      case "pricing": return <Pricing navigate={navigate} />;
-      case "case-studies": return <CaseStudies navigate={navigate} />;
-      case "about-us": return <AboutUs navigate={navigate} />;
+      case "home":            return <Home navigate={navigate} />;
+      case "what-we-do":     return <WhatWeDo navigate={navigate} />;
+      case "who-we-help":    return <WhoWeHelp navigate={navigate} />;
+      case "pricing":        return <Pricing navigate={navigate} />;
+      case "case-studies":   return <CaseStudies navigate={navigate} />;
+      case "about-us":       return <AboutUs navigate={navigate} />;
       case "knowledge-centre": return <KnowledgeCentre navigate={navigate} />;
-      case "contact": return <Contact navigate={navigate} />;
-      default: return <Home navigate={navigate} />;
+      case "contact":        return <Contact navigate={navigate} />;
+      default:               return <Home navigate={navigate} />;
     }
   };
 
   return (
     <div className="font-sans text-gray-800 bg-white">
-      <TopBar />
+      <TopBar navigate={navigate} />
       <Navbar currentPage={currentPage} navigate={navigate} />
       <main>{renderPage()}</main>
       <Footer navigate={navigate} />

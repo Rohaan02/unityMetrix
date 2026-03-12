@@ -13,7 +13,7 @@ export default function ContactForm({ dark = false }) {
   };
 
   const labelClass = `block text-sm font-medium mb-1 ${dark ? "text-gray-300" : "text-gray-700"}`;
-  const inputClass = `w-full px-4 py-3 rounded-xl border ${dark ? "bg-[#ffffff10] border-[#ffffff20] text-white placeholder-gray-400 focus:border-[#00d4ff]" : "bg-white border-gray-200 text-gray-800 focus:border-[#00d4ff]"} outline-none transition-colors`;
+  const inputClass = `w-full px-4 py-3 rounded-xl border ${dark ? "bg-[#ffffff10] border-[#ffffff20] text-white placeholder-gray-400 focus:border-[#f5a623]" : "bg-white border-gray-200 text-gray-800 focus:border-[#f5a623]"} outline-none transition-colors`;
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">

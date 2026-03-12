@@ -30,7 +30,7 @@ export default function StatCard({ number, suffix = "%", label }) {
   const [count, ref] = useCountUp(number);
   return (
     <div ref={ref} className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-      <div className="text-5xl font-bold text-[#00d4ff] mb-1">{count}<span className="text-3xl">{suffix}</span></div>
+      <div className="text-5xl font-bold text-[#f5a623] mb-1">{count}<span className="text-3xl">{suffix}</span></div>
       <p className="text-gray-600 text-sm mt-2">{label}</p>
     </div>
   );
